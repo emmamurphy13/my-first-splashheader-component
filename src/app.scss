@@ -6,6 +6,7 @@
 
 /* ---------- Google Fonts ---------- */
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Droid+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500&family=Space+Grotesk:wght@400;500;700&display=swap');
 
 /* ===========================================
    CSS Custom Properties
@@ -28,6 +29,9 @@
   /* Typography */
   --font-serif: 'PT Serif', Georgia, 'Times New Roman', Times, serif;
   --font-sans: 'Droid Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-serif-display: 'Lora', Georgia, 'Times New Roman', Times, serif;
+  --font-sans-ui: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   /* Root Font Sizes */
@@ -71,6 +75,7 @@
 
   /* Spacing - use these for consistent margins and padding */
   --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-none: 0;
   --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 1rem; /* 16px */
   --spacing-md: 1.5rem; /* 24px */
@@ -86,6 +91,8 @@
   --max-width-image-small: 320px;
   --max-width-footer-logo: 400px;
   --site-chrome-height: 200px;
+  --size-full: 100%;
+  --size-auto: auto;
 
   /* Dashboard Layout */
   --dashboard-item-min-width: 200px;
@@ -102,14 +109,38 @@
 
   /* Border Radius */
   --border-radius-sm: 8px;
+  --border-radius-md: 12px;
 
   /* Transitions */
   --transition-color: color 0.2s ease;
   --transition-opacity: opacity 0.2s ease;
+  --transition-transform: transform 0.2s ease;
 
   /* Opacity */
   --opacity-hover: 0.8;
   --opacity-hover-faint: 0.7;
+
+  /* Shadow Tokens */
+  --shadow-soft: 0 6px 16px var(--color-shadow);
+  --shadow-elevated: 0 14px 24px var(--color-shadow);
+
+  /* Story Theme: CUNY Future Desk */
+  --story-cuny-accent: #2f8f83;
+  --story-cuny-ink: #113f3b;
+  --story-cuny-body: #1f5a54;
+  --story-cuny-paper: #f6fcfa;
+  --story-cuny-surface: #e4f4ef;
+  --story-cuny-muted: #4f7f78;
+  --story-cuny-border: #b9ddd4;
+  --story-cuny-highlight: #79c8b8;
+  --story-cuny-card-bg: #1f6f66;
+  --story-cuny-card-text: #ecf9f5;
+  --story-cuny-card-number: #c6efe4;
+  --story-cuny-page-gradient: linear-gradient(var(--story-cuny-paper), var(--story-cuny-surface));
+  --story-cuny-hero-gradient: linear-gradient(var(--story-cuny-accent), var(--story-cuny-card-bg));
+  --story-cuny-splash-min-height: 28rem;
+  --story-cuny-splash-content-width: 44rem;
+  --story-cuny-splash-image-opacity: 0.35;
 }
 
 /* ===========================================
